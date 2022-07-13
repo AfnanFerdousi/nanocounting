@@ -8,7 +8,7 @@ const Reciept = () => {
     const tax = item?.price * 0.05
 
     useEffect(() => {
-        const url = `http://localhost:5000/reciept/${id}`;
+        const url = `https://mighty-cliffs-51736.herokuapp.com/reciept/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

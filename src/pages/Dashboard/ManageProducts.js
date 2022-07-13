@@ -6,7 +6,7 @@ const ManageProducts = () => {
 
     useEffect(() => {
         const getProducts = () => {
-            const url = "http://localhost:5000/products";
+            const url = "https://mighty-cliffs-51736.herokuapp.com//products";
             fetch(url, {
                 method: "GET",
                 "content-type": "application/json",

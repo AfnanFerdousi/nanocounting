@@ -12,7 +12,7 @@ const MyProfile = () => {
     const [updateProfile, setUpdateProfile] = useState(null);
          useEffect(() => {
             const myProfile = () => {
-                fetch(`http://localhost:5000/user/${user?.email}`, {
+                fetch(`https://mighty-cliffs-51736.herokuapp.com/user/${user?.email}`, {
                     method: "GET",
                     headers: { 
                         "content-type": "application/json",

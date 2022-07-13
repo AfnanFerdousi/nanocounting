@@ -4,7 +4,7 @@ import ProductsCard from './ProductsCard';
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/products/home')
+        fetch('https://mighty-cliffs-51736.herokuapp.com/products/home')
         .then(res => res.json())
         .then(data => setProducts(data))
     },[]) 

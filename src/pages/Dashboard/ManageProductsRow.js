@@ -5,7 +5,7 @@ const ManageProductsRow = ({ product, index }) => {
     const [deleteOrder, setDeleteOrder] = useState(null);
 
     const handleDeleteOrder = _id => {
-        fetch(`http://localhost:5000/products/${_id}`, {
+        fetch(`https://mighty-cliffs-51736.herokuapp.com//products/${_id}`, {
             method: "DELETE",
             headers: {
                 authorization: `Bearer ${localStorage.getItem("accessToken")}`

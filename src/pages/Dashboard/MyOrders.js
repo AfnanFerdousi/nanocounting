@@ -11,7 +11,7 @@ const MyOrders = () => {
     useEffect(() => {
         const getOrders = () => {
             const email = user.email;
-            const url = `http://localhost:5000/myOrder?email=${email}`
+            const url = `https://mighty-cliffs-51736.herokuapp.com/myOrder?email=${email}`
             fetch(url, {
                 method: "GET",
                 "content-type": "application/json",

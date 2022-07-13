@@ -10,7 +10,7 @@ const stripePromise = loadStripe('pk_test_51LHswIIH6MxdVQFcCo6bDvfwV7i2rzgIXaXzi
 
 const Payment = () => {
     const { id } = useParams();
-    const url = `http://localhost:5000/payment/${id}`;
+    const url = `https://mighty-cliffs-51736.herokuapp.com/payment/${id}`;
     const { data: product, isLoading } = useQuery(['payment', id], () => fetch(url, {
         method: "GET",
         headers: {

@@ -12,7 +12,7 @@ const Purchase = () => {
     const { register, handleSubmit, reset, formState: { errors } } = useForm();
 
     useEffect(() => {
-        const url = `http://localhost:5000/purchase/${id}`;
+        const url = `https://mighty-cliffs-51736.herokuapp.com/purchase/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -34,7 +34,7 @@ const Purchase = () => {
             price: Number(item.buyerPrice * data.orderAmount),
             sellerPrice: Number(item.sellerPrice * data.orderAmount)
         }
-        fetch("http://localhost:5000/purchase", {
+        fetch("https://mighty-cliffs-51736.herokuapp.com/purchase", {
             method: 'POST',
             headers: {
                 "content-type": "application/json",

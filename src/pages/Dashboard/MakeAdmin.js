@@ -8,7 +8,7 @@ const MakeAdmin = () => {
 
     useEffect(() => {
         const makeAdmin = () => {  
-            fetch('http://localhost:5000/user', {
+            fetch('https://mighty-cliffs-51736.herokuapp.com/user', {
                 method: "GET",
                 "content-type": "application/json",
                 headers: { authorization: `Bearer ${localStorage.getItem("accessToken")}` }

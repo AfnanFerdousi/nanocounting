@@ -5,7 +5,7 @@ const MakeAccountantRow = ({ user, index }) => {
     // console.log(user)
     const { email, role } = user;
     const makeAccountant = () => {
-        fetch(`http://localhost:5000/user/accountant/${email}`, {
+        fetch(`https://mighty-cliffs-51736.herokuapp.com/user/accountant/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

@@ -9,7 +9,7 @@ const ManageOrder = () => {
 
     useEffect(() => {
         const getAllOrders = () => {
-            const url = "http://localhost:5000/purchase";
+            const url = "https://mighty-cliffs-51736.herokuapp.com/purchase";
             fetch(url, {
                 method: "GET",
                 "content-type": "application/json",

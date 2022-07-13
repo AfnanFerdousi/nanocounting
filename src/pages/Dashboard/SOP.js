@@ -9,7 +9,7 @@ const SOP = () => {
     const tax = item?.price * 0.05
     // 
     useEffect(() => {
-        const url = `http://localhost:5000/sop`;
+        const url = `https://mighty-cliffs-51736.herokuapp.com/sop`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
